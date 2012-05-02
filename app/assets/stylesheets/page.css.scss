@@ -1,0 +1,14 @@
+// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{font-family:Helvetica}
+
+#wrapmes{width:700px; float:left; }
+#mesheader{width:696px; float:left; background:#bdd4e1;}
+#mesheader a{text-decoration: none; color:#333;}
+#linkanterior{width:100px; padding:15px; float:left; text-align:center;}
+#linksiguiente{width:100px; padding:15px; float:left; text-align:center;}
+#titulomes{width:435px; float:left; text-align:center; padding: 15px 0 0 0;}
+.diaNombre{width:94px;  float:left; background:#e2e2e2; margin:3px; text-align:center; padding-top:5px; padding-bottom:5px; font-size:.75em}
+.boxdia{width:92px; height:75px; float:left; border:1px solid #e2e2e2; margin:3px; text-align:center; padding-top:15px;background:#c9e9c7;}

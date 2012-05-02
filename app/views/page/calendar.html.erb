@@ -1,0 +1,44 @@
+
+
+
+<h1><%= @title %></h1>
+
+<!--
+<%= mostrarFecha(@anio,@mes,@dia) %>
+-->
+
+<% cantidad = cantidadDiasMes(@mes, @anio) %>
+
+
+
+<div id="wrapmes">
+	<div id="mesheader">
+		<div id="linkanterior"><%= linkAnterior(@anio,@mes)%></div>
+		<div id="titulomes"><%= nombreMes(@mes,@anio) %></div>
+		<div id="linksiguiente"><%= linkSiguiente(@anio,@mes)%></div>
+	</div>
+	<div id="dias">
+		<div class="diaNombre">Domingo</div>
+		<div class="diaNombre">Lunes</div>
+		<div class="diaNombre">Martes</div>
+		<div class="diaNombre">Miercoles</div>
+		<div class="diaNombre">Jueves</div>
+		<div class="diaNombre">Viernes</div>
+		<div class="diaNombre">Sabado</div>
+	</div>
+<% posicion = posicionInicio(@anio,@mes,@dia) %>
+
+<% posicion.times do |zaraza| %>
+	<div class="boxdia"></div>
+<% end %>
+
+
+<% i = 1 %>
+<% while i < cantidad+1 %>
+
+<div class="boxdia"><%= i %></div>
+
+<% i +=1 %>
+<% end %>
+
+</div>
