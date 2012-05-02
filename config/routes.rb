@@ -1,7 +1,10 @@
 Calendar::Application.routes.draw do
-  get "calendario/:anio/:mes/:dia" => "page#calendar", :as => 'calendario'
-
   
+  get "calendario(/:anio(/:mes(/:dia)))" => "page#calendar", :as => 'calendario'
+
+  #match "calendario/" => "page#calendar", :as => 'calendario'
+
+
 
   get "reservas" => "page#reservation"
 
